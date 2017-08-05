@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<% include partials/template/head.ejs %>
+	</head>
+
+	<body>
+		<div class="container">
+			<% include partials/template/header.ejs %>
+
+			<div class="content">
+				<nav class="second_level_nav" role="navigation">
+					<% include partials/content/secondLevelNav_content.ejs %>
+				</nav>
+
+				<section class="main_content">
+					<% include partials/content/main_content.ejs %>
+				</section>
+
+				<aside>
+					<% include partials/content/rightside_content.ejs %>
+				</aside>	
+			</div> <!-- content -->
+				
+		</div> <!-- container -->
+
+		<% include partials/template/footer.ejs %>
+
+		<% include partials/template/jsdefaults.ejs %>
+	</body>
+</html>
